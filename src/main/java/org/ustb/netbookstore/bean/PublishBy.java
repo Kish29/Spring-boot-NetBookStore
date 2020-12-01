@@ -1,6 +1,5 @@
 package org.ustb.netbookstore.bean;
 
-
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import lombok.AllArgsConstructor;
@@ -16,11 +15,10 @@ import javax.persistence.Id;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class WareHouse {
+public class PublishBy {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @TableId(value = "wid", type = IdType.AUTO)
-    private int wid;
-    private String address;
-    private String phone;
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @TableId(value = "name", type = IdType.INPUT)
+    private String name;
+    private int bid;
 }
